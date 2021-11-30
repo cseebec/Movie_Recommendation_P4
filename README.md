@@ -96,11 +96,13 @@ However, this model is certainly not a perfect recommendation system for many re
 
 # Citations
 **Data Sources**
+
 https://www.kaggle.com/tmdb/tmdb-movie-metadata
 
 https://grouplens.org/datasets/movielens/latest/
 
 **Other Links Used**
+
 https://github.com/codeheroku/Introduction-to-Machine-Learning/blob/master/Building%20a%20Movie%20Recommendation%20Engine/Movie_Recommendation_Engine.ipynb
 
 https://github.com/KevinLiao159/MyDataSciencePortfolio/blob/master/movie_recommender/movie_recommendation_using_KNN.ipynb

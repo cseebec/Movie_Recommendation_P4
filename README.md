@@ -69,7 +69,10 @@ There is only one python script for this recommendation system, "Movie_Recommend
 Steps to analyze the data
 1.  Clean the data
 2.  Remove data that is unneccesary to the code
-  * Use matplotlib to help visualize this rating data
+   * Use matplotlib to help visualize this rating data
+3. Create pivot table in python
+4. Use pairwise distance to find
+5. Create item similarity recommendation system 
 
 
 # Conclusions
@@ -102,9 +105,3 @@ https://github.com/codeheroku/Introduction-to-Machine-Learning/blob/master/Build
 https://github.com/KevinLiao159/MyDataSciencePortfolio/blob/master/movie_recommender/movie_recommendation_using_KNN.ipynb
 
 https://medium.com/@cmukesh8688/tf-idf-vectorizer-scikit-learn-dbc0244a911a
-
-
-
-
-
-

@@ -56,6 +56,11 @@ In this repo I used two links to gather data.
 
 # Data Analysis 
 ### Content Based
+There are two python scripts for performing data analysis for the content based model, "Cleaning Dataset.ipynb" and "Content_Movie_Recommendation_System.ipynb"
+
+"Cleaning Dataset.ipynb" as the name states cleans the csv files and exports a cleaned csv file that can be used to create the model. Some of the functions used in the script are for loops, split, replace, and merge
+
+"Content_Movie_Recommendation_System.ipynb" again as the name states creates a Content Based Movie Recommendation System. The script creates the recommendation system using mainly count vectorizer (to convert strings to numeric values) and cosine similarity matrices (to find the similarity between 2 strings). Then the script evaluates the model using a TF-IDF (Terms Frequency - Inverse Document Frequency) model and K nearest neighbors to see how many of the genres of the predicted movies exactly match the genres of the movies the prediction was based on. See the Content Based Section below in the Conclusion section for more information on the evalualation of this model and the conclusions. 
 
 ### Collaborative Based
 
@@ -63,6 +68,12 @@ In this repo I used two links to gather data.
 
 # Conclusions
 ### Content Based
+One of the more challenging aspects of this project was identifying a way to evaluate this model. This model is an unsupervised machine learning model and there are no objectively "correct" recommendations it is a subjective topic. So evaluating the sucess of the model was a difficult hurdle because standard machine learning metrics like R-squared score and mean squared error cannot be used. So, I decided that my metric for the success of this model would be predicted movie genres exactly matched the genre of the movie that it was recommended based on. 
+
+Image
+
+As the table shows using this metric the recommendation system performed very well. 
+
 
 ### Collaborative Based
 

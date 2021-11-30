@@ -55,6 +55,7 @@ In this repo I used two links to gather data.
     * Both these csv files are used in Movie_Recommender.ipynb
 
 # Data Analysis 
+
 ### Content Based
 There are two python scripts for performing data analysis for the content based model, "Cleaning Dataset.ipynb" and "Content_Movie_Recommendation_System.ipynb"
 
@@ -63,16 +64,27 @@ There are two python scripts for performing data analysis for the content based 
 "Content_Movie_Recommendation_System.ipynb" again as the name states creates a Content Based Movie Recommendation System. The script creates the recommendation system using mainly count vectorizer (to convert strings to numeric values) and cosine similarity matrices (to find the similarity between 2 strings). Then the script evaluates the model using a TF-IDF (Terms Frequency - Inverse Document Frequency) model and K nearest neighbors to see how many of the genres of the predicted movies exactly match the genres of the movies the prediction was based on. See the Content Based Section below in the Conclusion section for more information on the evalualation of this model and the conclusions. 
 
 ### Collaborative Based
+There is only one python script for this recommendation system, "Movie_Recommender.ipynb". 
 
+Steps to analyze the data
+1.  Clean the data
+2.  Remove data that is unneccesary to the code
+  * Use matplotlib to help visualize this rating data
 
 
 # Conclusions
+
 ### Content Based
 One of the more challenging aspects of this project was identifying a way to evaluate this model. This model is an unsupervised machine learning model and there are no objectively "correct" recommendations it is a subjective topic. So evaluating the sucess of the model was a difficult hurdle because standard machine learning metrics like R-squared score and mean squared error cannot be used. So, I decided that my metric for the success of this model would be predicted movie genres exactly matched the genre of the movie that it was recommended based on. 
 
-Image
+![](04_Images/Picture1.png)
 
-As the table shows using this metric the recommendation system performed very well. 
+As the table shows, using this metric the recommendation system performed very well. The recommendation system suggested movies that matched the genres of original movie 92% of the time.
+
+However, this model is certainly not a perfect recommendation system for many reasons. 
+1. It only has 5,000 movies this seems like a lot but a lot of movies are not included
+2. Only goes up to 2017
+3. Does not factor in user prefences or popularity it only focuses on purely the content of the movies
 
 
 ### Collaborative Based

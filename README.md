@@ -1,5 +1,5 @@
 # Introduction to movie_recommendation_P4
-Use machine learning packages in python to create two movie recommendation systems (one content based and one collaborative based)
+Use machine learning packages in python to create a movie recommendation system
 
 ### About Recommendation Systems
 First of all what is a recommendation system? A recommendation system is software that analyzes data so that it can make predictions for things that a user might enjoy. 
@@ -22,7 +22,7 @@ There are four types of recommendation systems
 3. **Popularity Based** - recommends the most popular products
 4. **Hybrid Model** - combination of two or more of the systems above
 
-* In this repo I will create 2 models, one will be content based and one will be collaborative based. Popularity Based and Hybrid Models are both effective models but they just are not used in this repo
+* In this repo I will create a content based model. The other three models are good as well, but I decided to use a content based model
 
 # System Requirements
 
@@ -49,6 +49,8 @@ In this repo I used two links to gather data.
     * I saved both these csv files to 01_Content_Based_Filtering_System/01_Starting_Datasets
     * Both of these csv files are read into Cleaning Data.ipynb cleaned up, merged together, and the movies.csv file in 01_Content_Based_Filtering_System/01_Starting_Datasets is just the cleaned up version of these files. 
 
+**I was unable to finish the recommendation system for this data**
+
 2. The second link used in this repo is https://grouplens.org/datasets/movielens/latest/
   * From this link download ml-latest.zip 
     * Within this zip folder there are multiple csv files the only 2 used in this repo are movies.csv and ratings.csv
@@ -64,16 +66,7 @@ There are two python scripts for performing data analysis for the content based 
 "Content_Movie_Recommendation_System.ipynb" again as the name states creates a Content Based Movie Recommendation System. The script creates the recommendation system using mainly count vectorizer (to convert strings to numeric values) and cosine similarity matrices (to find the similarity between 2 strings). Then the script evaluates the model using a TF-IDF (Terms Frequency - Inverse Document Frequency) model and K nearest neighbors to see how many of the genres of the predicted movies exactly match the genres of the movies the prediction was based on. See the Content Based Section below in the Conclusion section for more information on the evalualation of this model and the conclusions. 
 
 ### Collaborative Based
-There is only one python script for this recommendation system, "Movie_Recommender.ipynb". 
-
-Steps to analyze the data
-1.  Clean the data
-2.  Remove data that is unneccesary to the code
-   * Use matplotlib to help visualize this rating data
-3. Create pivot table in python
-4. Use pairwise distance to find
-5. Create item similarity recommendation system 
-
+I began to code a script for a collaborative based recommendation system "Collab_Movie_Recommendation_System.ipynb". I was unable to finish the code, but the initial steps of cleaning the data, creating a pivot table, and calculating the pairwise distance. This is not a recommendation system but you can start to create a collaborative recommendation system with this code
 
 # Conclusions
 
@@ -91,7 +84,7 @@ However, this model is certainly not a perfect recommendation system for many re
 
 
 ### Collaborative Based
-
+Even though the system is not finished it can still be used as starter code
 
 
 # Citations

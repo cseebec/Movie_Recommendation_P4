@@ -84,7 +84,7 @@ However, this model is certainly not a perfect recommendation system for many re
 
 
 ### Collaborative Based
-Even though the system is not finished it can still be used as starter code
+Even though the system is not finished it can still be used as starter code.
 
 
 # Citations
